@@ -22,6 +22,8 @@ document.getElementById("Registrarse").addEventListener("click", function(event)
         alert("La contraseña debe ser al menos de 6 caracteres.");
     } else if (fecha === "") {
         alert("¡Por favor ingresa tu fecha de nacimiento!");
+    } else if (tel === ""){
+        alert("Coloca tu telefono");
     } else {
         alert("Registro completo, ¡bienvenido " + nombre + "!");
     }
