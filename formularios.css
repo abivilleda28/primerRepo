@@ -1,0 +1,36 @@
+.contenedor{
+    background-color: pink;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+label{
+    font-size: 10x;
+    font-weight:bold;
+    font-family: 'Times New Roman', Times, serif;
+}
+.boton1{
+    width: 100px;
+    border-radius: 10px;
+    background-color: red;
+    font-weight: bold;
+    font-size: 15px;
+}
+.boton2{
+    width: 10px;
+}
+input{
+    margin-bottom: 10px;
+    width: 300px;
+    background-color: whitesmoke;
+}
+.formato{
+    background-color:lightsteelblue;
+    height: 630px;
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}

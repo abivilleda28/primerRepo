@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./formularios.css">
+    <title>Formularios</title>
+</head>
+<body>
+    <div class="contenedor">
+    <div class="formato">
+    <div class="formulario">
+        <h1>Formulario de registro</h1>
+    <form>
+        <label>Nombre completo:</label> <!--Def. de los inputs-->
+        <div class="datoEntrada" id="nombre">
+        <input type="text" placeholder="Nombre"> <!--datos de entrada-->
+        </div>
+        <br> <!--Salto de línea-->
+        <label for="correo">Ingresa tu e-mail:</lavel>
+        <div class="datoEntrada" id="email">
+        <input type="email" placeholder="Correo">
+        </div>
+        <br>
+        <label>Contraseña:</label>
+        <div class="datoEntrada" id="password">
+        <input type="password" placeholder="Contraseña">
+        <br>
+        <!-- <label>Adjunta tu comprobante</label>
+        <div class"datoEntrada" id="comprobante">
+        <input type="submit" placeholder="Comprobante">
+        </div>
+        <br> -->
+        <br>
+        <label>Fecha de nacimiento</label>
+        <div class="datoEntrada" id="fecha">
+        <input type="date" placeholder="Fecha de Nacimiento">
+        </div>
+        <br>
+        <label>Telefono</label>
+        <div class="datoEntrada" id="tel">
+        <input type="tel" placeholder="Telefono">
+        </div>
+        <br>
+        <!-- <label>Boton</label>
+        <div class="boton" id="boton">
+        <input type="button" value="abrir" id="boton1">
+        </div> -->
+        <br>
+        <label>Términos y condiciones</label>
+        <div class="boton" id="boton2">
+        <input type="checkbox">
+        </div>
+        <br>
+        <label>Quieres recibir promociones</label>
+        <div class="boton" id="boton3">
+        <input type="radio">
+        <div class="boton">
+            <center>
+                <button id="Registrarse" type="submit">Enviar</button>
+            </center>
+        </div>
+       
+
+            </form>
+        </div>
+    </div> 
+<script src="formularios.js"></script>
+</body>
+</html>
