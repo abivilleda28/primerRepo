@@ -1,70 +1,80 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./formularios.css">
-    <title>Formularios</title>
+    <title>Formulario de Registro</title>
 </head>
 <body>
     <div class="contenedor">
-    <div class="formato">
-    <div class="formulario">
-        <h1>Formulario de registro</h1>
-    <form>
-        <label>Nombre completo:</label> <!--Def. de los inputs-->
-        <div class="datoEntrada" id="nombre">
-        <input type="text" placeholder="Nombre"> <!--datos de entrada-->
-        </div>
-        <br> <!--Salto de línea-->
-        <label for="correo">Ingresa tu e-mail:</lavel>
-        <div class="datoEntrada" id="email">
-        <input type="email" placeholder="Correo">
-        </div>
-        <br>
-        <label>Contraseña:</label>
-        <div class="datoEntrada" id="password">
-        <input type="password" placeholder="Contraseña">
-        <br>
-        <!-- <label>Adjunta tu comprobante</label>
-        <div class"datoEntrada" id="comprobante">
-        <input type="submit" placeholder="Comprobante">
-        </div>
-        <br> -->
-        <br>
-        <label>Fecha de nacimiento</label>
-        <div class="datoEntrada" id="fecha">
-        <input type="date" placeholder="Fecha de Nacimiento">
-        </div>
-        <br>
-        <label>Telefono</label>
-        <div class="datoEntrada" id="tel">
-        <input type="tel" placeholder="Telefono">
-        </div>
-        <br>
-        <!-- <label>Boton</label>
-        <div class="boton" id="boton">
-        <input type="button" value="abrir" id="boton1">
-        </div> -->
-        <br>
-        <label>Términos y condiciones</label>
-        <div class="boton" id="boton2">
-        <input type="checkbox">
-        </div>
-        <br>
-        <label>Quieres recibir promociones</label>
-        <div class="boton" id="boton3">
-        <input type="radio">
-        <div class="boton">
-            <center>
-                <button id="Registrarse" type="submit">Enviar</button>
-            </center>
-        </div>
-       
+        <div class="formato">
+            <div class="formulario">
+                <h1>Formulario de Registro</h1>
+                <form>
+                    <!-- Nombre completo -->
+                    <label for="nombre">Nombre completo:</label>
+                    <div class="datoEntrada" id="nombre">
+                        <input type="text" id="nombre" name="nombre" placeholder="Nombre completo">
+                    </div>
+                    <br>
 
-            </form>
-        </div>
-    </div> 
-<script src="formularios.js"></script>
+                    <!-- Correo electrónico -->
+                    <label for="correo">Ingresa tu e-mail:</label>
+                    <div class="datoEntrada" id="email">
+                        <input type="email" id="correo" name="correo" placeholder="Correo electrónico">
+                    </div>
+                    <br>
+
+                    <!-- Contraseña -->
+                    <label for="password">Contraseña:</label>
+                    <div class="datoEntrada" id="password">
+                        <input type="password" id="password" name="password" placeholder="Contraseña">
+                    </div>
+                    <br>
+
+                    <!-- Fecha de nacimiento -->
+                    <label for="fecha">Fecha de nacimiento:</label>
+                    <div class="datoEntrada" id="fecha">
+                        <input type="date" id="fecha" name="fecha">
+                    </div>
+                    <br>
+
+                    <!-- Teléfono -->
+                    <label for="tel">Teléfono:</label>
+                    <div class="datoEntrada" id="tel">
+                        <input type="tel" id="tel" name="tel" placeholder="Teléfono">
+                    </div>
+                    <br>
+
+                    <!-- Términos y condiciones -->
+                    <label for="terminos">Aceptar términos y condiciones:</label>
+                    <div class="datoEntrada" id="terminos">
+                        <input type="checkbox" id="terminos" name="terminos">
+                    </div>
+                    <br>
+
+                    <!-- Recibir promociones -->
+                    <label for="promociones">¿Quieres recibir promociones?</label>
+                    <div class="datoEntrada" id="promociones">
+                        <input type="radio" id="siPromociones" name="promociones" value="si">
+                        <label for="siPromociones">Sí</label>
+                        <input type="radio" id="noPromociones" name="promociones" value="no">
+                        <label for="noPromociones">No</label>
+                    </div>
+                    <br>
+
+                    <!-- Botón de enviar -->
+                    <div class="boton">
+                        <center>
+                            <button id="Registrarse" type="button">Enviar</button>
+                        </center>
+                    </div>
+                </form>
+            </div>
+        </div> 
+    </div>
+    
+    <script src="formularios.js"></script>
 </body>
 </html>
