@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM PRACTICA SENCILLA</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="form.Styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div id="nombre">
+                        <input type="text" id="usuario" placeholder="Coloca aquí tu usuario">
+                    </div>
+                    <div id="password">
+                        <input type="password" id="contrasena" placeholder="Coloca tu contraseña">
+                    </div>
+                </div>
+                <div class="col-lg-12">
+                    <p id="msj" class="invalid" style="display: none;">Tu contraseña debe ser de al menos 8 caracteres.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <button type="button" id="registrarse">Login</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Function to validate password length
+        document.getElementById("registrarse").addEventListener("click", function() {
+            var password = document.getElementById("contrasena").value;
+            var mensaje = document.getElementById("msj");
+
+            // Check if the password is valid
+            if (password.length >= 8) {
+                mensaje.style.display = "none";  // Hide the message if password is valid
+                alert("Login exitoso!");
+                // Here you can proceed with further login actions, e.g., redirecting or submitting a form
+            } else {
+                mensaje.style.display = "block";  // Show the message if password is invalid
+            }
+        });
+    </script>
+</body>
+</html>

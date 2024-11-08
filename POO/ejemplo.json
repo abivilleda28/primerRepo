@@ -1,0 +1,43 @@
+[
+    {
+        "nombre":"Aby",
+        "edad" : 26,
+        "hobbies" : [
+        "Leer",
+        "Bailar",
+        "Dibujar"
+    ]
+},
+
+{
+        "nombre":"Andy",
+        "edad" : 29,
+        "hobbies" : [
+        "Correr",
+        "Comer",
+        "Nadar"
+    ]
+},
+
+
+{
+        "nombre":"Hannia",
+        "edad" : 22,
+        "hobbies" : [
+        "Gym",
+        "Leer",
+        "Dibujar"
+    ]
+},
+
+
+{
+        "nombre":"Xamitl",
+        "edad" : 28,
+        "hobbies" : [
+        "Bailar",
+        "Netflix",
+        "Pintar"
+        ]
+    }
+]
