@@ -1,0 +1,243 @@
+/* Define la clase para usar la fuente Cinzel */
+.cinzel-font {
+    font-family: "Cinzel", serif;
+    font-weight: 700; /* Ajusta el grosor según el estilo que prefieras */
+    font-size: 25px;  /* Tamaño de la fuente */
+    color: white;     /* Color de texto */
+    text-transform: uppercase; /* Si deseas el texto en mayúsculas */
+  }
+  
+
+  .roboto-medium {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    list-style: none;
+  }
+  
+  body {
+    font-family: 'Roboto', sans-serif;
+    background-color: white;
+    text-transform: capitalize;
+  }
+  
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+/* Contenedor para logo e imagen */
+.logo-container {
+    display: flex;
+    align-items: center; /* Alinea verticalmente la imagen y el texto */
+}
+
+/* Estilo para la imagen del logo */
+.logo-img {
+    width: 100px; /* Ajusta el tamaño del logo */
+    height: auto;
+    margin-right: 15px; /* Espacio entre la imagen y el texto */
+}
+
+/* Estilo para el texto del logo */
+label.logo {
+    font-size: 25px;
+    font-weight: bold;
+    color: black;
+}
+
+
+/* Estilos del header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .logo-img {
+    width: 50px; /* Ajusta el tamaño de la imagen */
+    height: auto;
+  }
+  
+  /* Estilos del Nav */
+
+  header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+  nav {
+    background: #FFB300;
+    height: 80px;
+    width: 100%;
+  }
+
+  header .logo-img {
+    width: 50px; /* Ajusta el tamaño de la imagen */
+    height: auto;
+}
+
+  label.logo {
+    color: black;
+    font-size: 25px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+  }
+  nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+  }
+  nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+  }
+  nav ul li a {
+    color: black;
+    font-size: 16px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+  }
+
+  @media (max-width: 768px) {
+    nav ul li a {
+        font-size: 16px;
+        padding: 10px 15px; /* Añadir más espacio a los enlaces */
+    }
+  }
+  
+  a.active,
+  a:hover {
+    background: #73C2FB;
+    transition: .5s;
+  }
+  .checkbtn {
+    display: none;
+    font-size: 30px;
+    color: black;
+  }
+  #check {
+    display: none;
+  }
+  
+  @media (max-width: 760px) {
+    .grid-container {
+        flex-direction: column;
+        align-items: center; /* Alineación centrada en pantallas pequeñas */
+    }
+  
+    .grid-item img {
+        max-width: 100%; /* Asegura que las imágenes no sobrepasen el contenedor */
+    }
+  }
+  
+/* Carrusel */
+    .carousel-inner img {
+    width: 100%;   /* La imagen ocupará el 100% del contenedor */
+    height: 600px; /* Ajusta la altura según sea necesario */
+    object-fit: contain; /* Mantiene la proporción de la imagen */
+    margin-bottom: 40px;
+  }
+
+  
+
+
+  /* Estilos de footer */
+  .footer {
+    background:linear-gradient(to right,#73C2FB,#73C2FB,#28A0F6); 
+    padding: 80px 0;
+  }
+  
+  .footer-row {
+    display: flex;
+    flex-wrap: nowrap; /* Mantiene los elementos en una sola fila */
+    justify-content: space-between;
+  }
+
+  .footer-links ul {
+    padding-left: 0;
+    list-style-type: none;
+}
+
+.footer-links ul li {
+    margin: 5px 0;
+}
+
+.footer-links h4 {
+    border-bottom: 2px solid #0056b3; /* Color más oscuro */
+}
+
+
+.footer-links {
+    flex-basis: 25%; /* Mantener el 25%, pero añadir padding extra */
+    padding: 0 20px;
+}
+
+
+  
+  .footer-links h4 {
+    font-size: 20px;
+    color: black; /* Cambié para mayor contraste */
+    margin-bottom: 25px;
+    font-weight: 500;
+    border-bottom: 2px solid #73C2FB ;
+    padding-bottom: 10px;
+    display: inline-block;
+  }
+  
+  /* Estilos específicos de la clase inscritos */
+  .inscritos {
+    font-style: italic;
+    text-align: center;
+  }
+  
+  /* Estilos para el contenedor grid */
+  .grid-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px; /* Para agregar un poco de espacio entre los items */
+}
+  }
+  
+  /* Estilos responsivos */
+  @media (max-width: 760px) {
+    .grid-container {
+        flex-direction: row;
+        align-items: center; /* Alineación centrada en pantallas pequeñas */
+    }
+  
+    .grid-item img {
+        max-width: 100%; /* Asegura que las imágenes no sobrepasen el contenedor */
+    }
+}
+
+    .footer-links {
+      flex-basis: 100%; /* Cada columna ocupará el ancho completo en pantallas pequeñas */
+      margin-bottom: 20px;
+    }
+  
+    .grid-container {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+  
+  
+  

@@ -5,10 +5,10 @@ POO
 Clases : Se refieren a nuestro molde o plantilla para que podamos crear ojetos. Utiliza la palabra reservada class.
 Constructor: Es una función obligatoria para crear objetos (cheff) atraves de caracteristicas especificas o atributos. 
 Objetos: Es lo que construimos a traves de la clase y el constructor. 
-Atributo : se refieren a las caracteristicas o propiedads de mi objeto(saludar, brincar, correr).
+Atributo : se refieren a las caracteristicas o propiedades de mi objeto(saludar, brincar, correr).
 Instanciación: se refiere a cuando ya creamos la clase, el constructor y el objeto. 
 Herencia : Cuenta con la palabra reservada extends. La herencia permite re utilizar el código de la clase padre en la clase hijo.
-Plolimorfismo: El comportamiento de cada objeto de la isma clase a un metodo.
+Polimorfismo: El comportamiento de cada objeto de la misma clase a un metodo.
 Encapsulamiento: Se refiere a encerrar y/o ocultar el código. 
 Abstracción: Se refiere a ser muy especifícos con los objetos (resumir).
 Modularidad: Nos permite reultilizar código, hacer modificaciones, tener orden y mantener el código.
@@ -18,7 +18,7 @@ Metodos accesores: Los métodos accesores, getters y setters, son métodos espec
 
 Principios SOLID: 
 Principio de responsabilidad Unica (SRP): Se refiere a que cada que asignamos una clase, objeto, etc debe ser unica.
-Principio de abierto y cerrado(OCP): SE refiere a que podemos extender el codigo ya existente deser necesario.
+Principio de abierto y cerrado(OCP): SE refiere a que podemos extender el codigo ya existente de ser necesario.
 
 Principio de sustitución de Liskov: Se refiere a que podemos tener cualquier tipo de objeto dentro de mi clase y no se ve afectado el comportamiento del mismo. 
 Principio de segregación de interfaces(ISP) : Se refiere a tener distintas interfaces.
@@ -26,7 +26,7 @@ Principio de investigación de dependencias(DIP) : Trabaja a traves de la abstra
 
 Objetos JSON:
 Javascript Object Notation
-SE manejan a traves de clave-valor y no tienen metodos.
+Se manejan a traves de clave-valor y no tienen metodos.
 
 */
 
@@ -130,3 +130,20 @@ user.fullName = "Xaxiry Gonzalez";
 alert(user.fullName);
 alert(user.nombre);
 alert(user.apellido);
+
+
+// crear un boton
+// const button = document.querySelector("button");
+// button.addEventListener("click", function(){
+//   console.log("¡Se hizo clic en el botón!");
+// });
+
+document.addEventListener("DOMContentLoaded", () => {
+    const button = document.querySelector("button");
+    if (button) {
+      button.addEventListener("click", () => {
+        console.log("¡Se hizo clic en el botón!");
+      });
+    }
+  });
+  
